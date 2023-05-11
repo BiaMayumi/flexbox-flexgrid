@@ -1,7 +1,22 @@
-.grid{
+body{
+    padding: 0; /* Resentando configurações */
+    margin: 0; /* Resentando configurações */
+    color: #353839; /* Cor do texto */
+    text-transform: uppercase;
+    text-align: center; /* Alinhamento */
 
+}
+
+.container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 100px;
-
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    gap: 0.6%;
+    
 }
